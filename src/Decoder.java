@@ -40,7 +40,7 @@ public class Decoder {
    * @return The decoded morsecode letter in english as a {@code String}. If the given morseLetter
    *                        is not a recognized morsecode character returns {@code null}.
    */
-  public String decodeMorseLetter(String morseLetter) {
+  private String decodeMorseLetter(String morseLetter) {
     Map<String, String> morseMap = new HashMap();
 
     morseMap.put(".-", "a");
